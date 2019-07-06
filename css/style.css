@@ -3,22 +3,66 @@ body{/*background: #F5E5DA;*/background: linear-gradient(-135deg, #B0E4F1, #E5C0
 img{width: 100%}
 #wrap{margin: 0 auto;position: relative;}
 .inner{max-width: 1024px;margin: 0 auto;}
-header{position: absolute;right: 20px;top:20px;}
-header ul li{float: left;list-style: none;width: 25px;height: 25px;text-align: center;margin: 0}
-header ul li.tw-h{background: #333;color: #fff}
-.logoArea{background: #fff;height:275px;text-align: center;}
-.logoArea h1 a{font-family: 'M PLUS Rounded 1c', sans-serif;/*font-family: 'Kosugi Maru', sans-serif;*/color:#333;font-size:25px;-webkit-writing-mode: vertical-rl;-ms-writing-mode: tb-rl;writing-mode: vertical-rl;text-decoration: none;padding: 50px 0 0 0;line-height: 100%;}
+header{position: absolute;right: 25px;top:25px;z-index: 100;}
+header ul li{float: left;list-style: none;width: 20px;height: 20px;text-align: center;margin: 0}
+.logoArea{background: #fff;height:275px;text-align: center;position: relative;}
+.logoArea h1 a{/*font-family: 'M PLUS Rounded 1c', sans-serif;*/font-family: 'Kosugi Maru', sans-serif;color:#333;font-size:25px;-webkit-writing-mode: vertical-rl;-ms-writing-mode: tb-rl;writing-mode: vertical-rl;text-decoration: none;padding: 50px 0 0 0;}
 .logoArea p{font-size: 80%;margin: 25px 0 0;}
-.cont{width: 99%;margin: 0 auto;}
-.cont article{width: 30%;display: inline-block;vertical-align: top;padding: 5% 1.5% 0;}
+.cont{width: 75%;margin: 0 auto 5%;text-align: center;}
+.cont article{width: 30%;display: inline-block;text-align: center;vertical-align: top;padding: 5% 1% 0;}
 .cont article figure{width: 100%;height:100%;background: #fff;box-sizing: border-box;padding: 2.5%;}
 .cont article figure img{transition-duration: 0.3s;}
-.cont article h2 {font-size: 80%;line-height: 1.7em;padding: 3% 0;}
+.cont article h2 {font-size: 80%;line-height: 1.7em;padding: 3% 0;text-align: left;}
 .cont article h2 a{text-decoration: none;color: #333;font-family: 'Kosugi Maru', sans-serif;}
-.cont article p{font-size: 80%;color: #666}
+.cont article p{font-size: 80%;color: #666;text-align: left;}
 .cont article a:hover img{opacity: 0.7;transition-duration: 0.3s;}
+.ftrTop{background: #fff;text-align: center;}
+.ftrTop h3{font-family: 'Kosugi Maru', sans-serif;color:#333;text-align: center;font-size: 130%;display: block;padding: 5% 0 3%;}
+.prof{display: inline-block;width: 15%;padding: 2% 2% 0;vertical-align: top}
+.profThumb{text-align: center;font-size: 80%;}
+.profThumb img{border-radius: 50%;}
+.profThumb figcaption{padding: 15px 0 0}
+.ftrTop .ig-f{height:30px;line-height: 30px;font-family: 'Dosis', sans-serif;padding:5% 0;}
+.ftrTop .ig-f a>img{width: 28px;height: 28px;vertical-align: middle;}
+.ftrTop .ig-f-a{text-decoration: none;vertical-align: middle;color: #333;padding-left: 5px;}
+
+.logoArea-l{background: #fff;text-align: center;position: relative;padding: 15px 0}
+.logoArea-l div a{font-family: 'Kosugi Maru', sans-serif;color:#333;font-size:20px;text-decoration: none;}
+.logoArea-l p{font-size: 60%;margin: 10px 0 0;}
+.cont .posted-header{color: #333;border-bottom: 1px solid #333;padding-bottom: 4%;margin-bottom: 4%;}
+.cont .posted-header h1{font-size: 130%;margin: 7% auto 1%;line-height: 1.5em;}
+.cont .posted-header p{font-size: 90%;color: #666;}
+.cont .posted-cont{text-align: left;color: #333;padding-bottom: 10%;}
+.cont .posted-cont h2{}
+.cont .posted-cont h3{}
+.cont .posted-cont p{line-height: 1.5em;font-size: 95%;margin:5% auto 0;}
+.cont .posted-cont article{}
+.cont .posted-cont figure{width: 80%;margin:5% auto 0;background: #fff;box-sizing: border-box;padding: .8%;}
+.cont .posted-cont figcaption{font-size: 90%;text-align: center;margin-top: 2%;}
+
+
 @media(max-width:768px){
   .inner{width: 100%;margin: 0 auto;}
-  .cont{width: 80%;margin: 0 auto;}
+  .cont{width: 80%;margin: 0 auto 5%;}
   .cont article{width: 45.2%;display: inline-block;vertical-align: top;padding: 7% 2% 0;}
+  .prof{width: 28%;padding: 2% 3% 2%;vertical-align: top}
+  .profThumb{text-align: center;font-size: 80%;}
+  .profThumb img{border-radius: 50%;}
+  .profThumb figcaption{padding: 15px 0 0}
+  .ftrTop .ig-f{height:30px;line-height: 30px;font-family: 'Dosis', sans-serif;padding:5% 0;}
+  .ftrTop .ig-f a>img{width: 28px;height: 28px;vertical-align: middle;}
+  .ftrTop .ig-f-a{text-decoration: none;vertical-align: middle;color: #333;padding-left: 5px;}
+  .logoArea-l div a{font-size:18px;}
+  .logoArea-l p{font-size: 50%;}
+  .cont .posted-header{color: #333;border-bottom: 1px solid #333;padding-bottom: 10%;margin-bottom: 10%;}
+  .cont .posted-header h1{font-size: 120%;margin: 10% auto 1%;line-height: 1.5em;}
+  .cont .posted-header p{font-size: 80%;color: #666;}
+  .cont .posted-cont{text-align: left;color: #333;}
+  .cont .posted-cont h2{}
+  .cont .posted-cont h3{}
+  .cont .posted-cont p{line-height: 1.5em;font-size: 85%;margin:10% auto 0;}
+  .cont .posted-cont article{}
+  .cont .posted-cont figure{width: 90%;margin:10% auto 0;background: #fff;box-sizing: border-box;padding: .8%;}
+  .cont .posted-cont figcaption{font-size: 70%;text-align: center;margin-top: 2%;}
+
 }
